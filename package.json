@@ -1,0 +1,12 @@
+{
+  "name": "jose-almanza-personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio for Jose Emilio Almanza Carrizo.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}

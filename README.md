@@ -82,6 +82,14 @@ git push origin main
 
 GitHub Pages can serve the generated `dist/` directory using an appropriate Pages workflow or deployment action. The repository itself does not contain secrets.
 
+The repository now includes `.github/workflows/deploy-pages.yml`, which builds and deploys the site automatically whenever `main` changes. After the first successful workflow run, the public portfolio URL will be:
+
+<https://jalmanza12.github.io/jose-almanza-personal-portfolio/>
+
+The QR/NFC quick-links page will be:
+
+<https://jalmanza12.github.io/jose-almanza-personal-portfolio/links/>
+
 ## Known limitation
 
 The original Wix URL is preserved as a link because it appears in the resume, but it was not reachable from the build environment. The new portfolio therefore uses verified local artifacts rather than guessing at Wix-only pages or download URLs.

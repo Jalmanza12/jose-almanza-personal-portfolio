@@ -1,0 +1,13 @@
+{
+  "name": "Jose Almanza — Business Analytics & Finance",
+  "short_name": "Jose Almanza",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#091520",
+  "theme_color": "#0e1b2a",
+  "icons": [{
+    "src": "favicon.svg",
+    "sizes": "any",
+    "type": "image/svg+xml"
+  }]
+}

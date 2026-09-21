@@ -24,12 +24,9 @@ if (menuToggle && siteNav) {
   });
 }
 
-const revealOnLoad = document.querySelectorAll('.reveal-on-load');
-requestAnimationFrame(() => revealOnLoad.forEach((item) => item.classList.add('is-visible')));
-
-const revealOnScroll = document.querySelectorAll('.reveal-on-scroll');
+const revealItems = document.querySelectorAll('.reveal:not(.reveal-visible)');
 if (reducedMotion || !('IntersectionObserver' in window)) {
-  revealOnScroll.forEach((item) => item.classList.add('is-visible'));
+  revealItems.forEach((item) => item.classList.add('is-visible'));
 } else {
   const observer = new IntersectionObserver(
     (entries, currentObserver) => {
@@ -40,24 +37,31 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
         }
       });
     },
-    { threshold: 0.13 }
+    { threshold: 0.12 }
   );
-
-  revealOnScroll.forEach((item) => observer.observe(item));
+  revealItems.forEach((item) => observer.observe(item));
 }
 
-const contactForm = document.querySelector('#contact-form');
-if (contactForm) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(contactForm);
-    const subject = encodeURIComponent(`Portfolio message from ${formData.get('name')}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.get('name')}\nEmail: ${formData.get('email')}\n\n${formData.get('message')}`
-    );
-    window.location.href = `mailto:almanzajbu@gmail.com?subject=${subject}&body=${body}`;
+const closeDialog = (dialog) => {
+  if (dialog?.open) dialog.close();
+};
+
+document.querySelectorAll('[data-dialog]').forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    const dialog = document.getElementById(trigger.dataset.dialog);
+    if (dialog?.showModal) dialog.showModal();
   });
-}
+});
+
+document.querySelectorAll('[data-dialog-close]').forEach((button) => {
+  button.addEventListener('click', () => closeDialog(button.closest('dialog')));
+});
+
+document.querySelectorAll('dialog').forEach((dialog) => {
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) closeDialog(dialog);
+  });
+});
 
 const year = document.querySelector('[data-year]');
 if (year) year.textContent = new Date().getFullYear();

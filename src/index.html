@@ -3,191 +3,312 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f5f0" />
-    <meta name="description" content="Jose Emilio Almanza Carrizo — business analytics, finance, banking, and data-driven decision making." />
+    <meta name="theme-color" content="#0e1b2a" />
+    <meta name="description" content="Jose Almanza is a business analytics and finance professional working across data, lending, marketing, and leadership." />
     <meta property="og:title" content="Jose Almanza — Business Analytics & Finance" />
-    <meta property="og:description" content="The personal portfolio of Jose Emilio Almanza Carrizo." />
+    <meta property="og:description" content="A portfolio of analytics, finance, and business work by Jose Almanza." />
     <meta property="og:image" content="assets/jose-almanza.jpg" />
     <meta property="og:type" content="website" />
-    <title>Jose Almanza — Business Analytics &amp; Finance</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="main.js"></script>
+    <title>Jose Almanza — Business Analytics & Finance</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header" data-header>
-      <div class="shell nav-wrap">
+      <div class="container nav-shell">
         <a class="brand" href="#home" aria-label="Jose Almanza home">
-          <span class="brand-mark">J<span>/</span>A</span>
-          <span class="brand-name">Jose Almanza<small>Personal portfolio</small></span>
+          <span class="brand-mark">JA<span>↗</span></span>
+          <span class="brand-text">Jose Almanza<small>Business analytics &amp; finance</small></span>
         </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span>Menu</span><i aria-hidden="true"></i>
+          <span>Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
         </button>
         <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-          <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
+          <a href="#projects">Work</a>
           <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a class="nav-resume" href="assets/Jose-Almanza-Resume.docx" target="_blank" rel="noreferrer">Resume <span>↗</span></a>
+          <a class="nav-links" href="links/">Quick links <span>↗</span></a>
         </nav>
       </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="shell hero-layout">
-          <div class="hero-copy reveal-on-load">
-            <p class="overline"><span class="overline-line"></span> Jose Emilio Almanza Carrizo</p>
-            <p class="hero-index">01 / BUSINESS + DATA</p>
-            <h1>Decisions made <em>clearer.</em></h1>
-            <p class="hero-role">Business Analytics <b>/</b> Finance <b>/</b> Data-Driven Decision Making</p>
-            <p class="hero-summary">I bring together banking, financial analysis, and business analytics to turn complex information into confident next steps — for clients, teams, and the businesses they serve.</p>
+    <main id="main-content">
+      <section class="hero section-dark" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="container hero-layout">
+          <div class="hero-copy reveal reveal-visible">
+            <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> Jose Emilio Almanza Carrizo</p>
+            <p class="hero-index">01 / SIGNAL → DECISION</p>
+            <h1 id="hero-title">Making complex decisions <em>easier to see.</em></h1>
+            <p class="hero-role">Business analytics <span>/</span> Finance <span>/</span> People</p>
+            <p class="hero-intro">I connect data, financial judgment, and clear communication to help people and businesses move from information to a confident next step.</p>
             <div class="hero-actions">
-              <a class="action action-solid" href="assets/Jose-Almanza-Resume.docx" target="_blank" rel="noreferrer">View My Resume <span>↗</span></a>
-              <a class="action action-quiet" href="#projects">Explore My Work <span>↓</span></a>
+              <a class="button button-primary" href="#projects">View my work <span>↓</span></a>
+              <a class="button button-outline" href="https://www.linkedin.com/in/jose-almanza-a97944234/" target="_blank" rel="noreferrer">Connect with me <span>↗</span></a>
             </div>
-            <div class="hero-current"><span>Currently</span><p>M.S. candidate in Applied Business Analytics<br />University of Arkansas</p></div>
+            <p class="hero-current"><span>Currently</span> M.S. candidate in Business Applied Analytics at the University of Arkansas.</p>
           </div>
 
-          <div class="hero-portrait reveal-on-load reveal-delay">
-            <div class="portrait-label portrait-label-top">NWA / 2026</div>
-            <figure class="portrait-frame">
-              <div class="portrait-backdrop" aria-hidden="true"></div>
+          <div class="hero-visual reveal reveal-delay-1 reveal-visible">
+            <figure class="portrait-card">
+              <div class="portrait-corner" aria-hidden="true"></div>
               <img src="assets/jose-almanza.jpg" alt="Professional portrait of Jose Almanza" />
               <figcaption><span>Finance</span><span>Analytics</span><span>People</span></figcaption>
             </figure>
-            <div class="portrait-note"><span class="note-dot"></span><span>Working at the intersection of numbers and nuance.</span></div>
-            <div class="portrait-label portrait-label-bottom">Photo / Personal archive</div>
+            <div class="portrait-note"><span class="note-dot"></span> Working at the intersection of numbers and nuance.</div>
           </div>
         </div>
-        <div class="shell hero-footer reveal-on-load reveal-delay-long">
-          <p>Scroll to explore</p>
-          <div class="hero-metrics"><span><strong>$300K+</strong> first-quarter lending volume</span><span><strong>3.46</strong> BBA GPA</span><span><strong>EN / ES</strong> languages</span></div>
+        <div class="container hero-bottom reveal reveal-delay-2 reveal-visible">
+          <span class="scroll-note">Scroll to explore <b>↓</b></span>
+          <div class="hero-facts" aria-label="Selected facts">
+            <span><strong>$300K+</strong> first-quarter lending volume</span>
+            <span><strong>3.46</strong> BBA GPA</span>
+            <span><strong>EN / ES</strong> languages</span>
+          </div>
         </div>
       </section>
 
-      <section class="section section-dark about" id="about">
-        <div class="shell section-grid">
-          <div class="section-marker"><span>02</span><p>ABOUT</p></div>
-          <div class="about-content">
-            <div class="section-intro"><p class="eyebrow">The throughline</p><h2>Business is human. <em>Data helps us see it.</em></h2></div>
-            <div class="about-columns">
-              <div class="about-story">
-                <p class="large-copy">I have built my career by moving between the analytical and the personal — from product data and profitability to lending relationships and borrower goals.</p>
-                <p>My BBA in Data Analytics and Marketing at John Brown University gave me the foundation to ask better questions of data. My work at Dayspring Cards connected that foundation to financial performance, products, and operational decisions.</p>
-                <p>Now, as a Relationship Banker at Arvest Bank and an M.S. candidate in Applied Business Analytics, I am deepening that perspective across credit, finance, and business strategy.</p>
-              </div>
-              <div class="about-signal">
-                <div class="signal-card"><span class="signal-number">01</span><strong>Credit<br />judgment</strong><p>Understanding the story behind a number before making the next call.</p></div>
-                <div class="signal-card signal-card-accent"><span class="signal-number">02</span><strong>Analytical<br />fluency</strong><p>SQL, Excel, Power BI, Python, and RStudio made useful for real decisions.</p></div>
-                <div class="signal-card"><span class="signal-number">03</span><strong>Human<br />context</strong><p>Clear communication with clients, teammates, and cross-functional partners.</p></div>
-              </div>
+      <section class="section section-paper about-section" id="about" aria-labelledby="about-title">
+        <div class="container section-heading reveal">
+          <p class="section-kicker">02 / About</p>
+          <h2 id="about-title">The throughline is simple: <em>useful insight.</em></h2>
+        </div>
+        <div class="container about-layout">
+          <div class="about-story reveal">
+            <p class="lead-copy">My work sits between business questions and the people who have to act on the answers.</p>
+            <p>I built my foundation through a BBA in Data Analytics and Marketing at John Brown University, then applied it across retail analytics, product performance, lending, and financial decision-making.</p>
+            <p>Today, I am deepening that perspective through an M.S. in Business Applied Analytics at the University of Arkansas. I am interested in the point where analysis becomes practical: a clearer recommendation, a better lending conversation, or a more informed operating decision.</p>
+            <a class="text-link" href="#experience">See the experience <span>↓</span></a>
+          </div>
+          <aside class="about-card reveal reveal-delay-1">
+            <p class="card-label">Working perspective</p>
+            <div class="about-point"><span>01</span><strong>Read the signal</strong><p>Ask the right question before reaching for the answer.</p></div>
+            <div class="about-point"><span>02</span><strong>Make it usable</strong><p>Translate analysis into language a team or client can act on.</p></div>
+            <div class="about-point"><span>03</span><strong>Keep people in view</strong><p>Context matters when the decision has a real person behind it.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-cream experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="container section-heading experience-heading reveal">
+          <p class="section-kicker">03 / Experience</p>
+          <h2 id="experience-title">From analysis to <em>outcome.</em></h2>
+          <p class="heading-note">A career across university finance, consumer lending, product analysis, and retail data.</p>
+        </div>
+        <div class="container experience-list">
+          <article class="experience-entry featured-entry reveal">
+            <div class="entry-index">01 <span>NOW</span></div>
+            <div class="entry-body">
+              <div class="entry-meta"><span>University of Arkansas</span><span>Fayetteville, AR</span></div>
+              <h3>Graduate Assistant — Financial Advisor</h3>
+              <p class="entry-date">Aug 2026 — Present · Office of Financial Affairs</p>
+              <ul class="entry-highlights">
+                <li>Support fiscal operations and funding allocation for Registered Student Organizations through the Associated Student Government’s Office of Financial Affairs.</li>
+                <li>Review organizational budgets for alignment with financial policies, procurement rules, and standing regulations.</li>
+                <li>Advise student organizations on pre-event financial planning and contribute to impartial, data-informed funding decisions.</li>
+              </ul>
+              <div class="tag-row"><span>Budget analysis</span><span>Financial advising</span><span>Policy review</span></div>
             </div>
-          </div>
-        </div>
-      </section>
+            <span class="entry-arrow" aria-hidden="true">↗</span>
+          </article>
 
-      <section class="section experience" id="experience">
-        <div class="shell section-grid">
-          <div class="section-marker"><span>03</span><p>EXPERIENCE</p></div>
-          <div class="experience-content">
-            <div class="section-intro"><p class="eyebrow">Selected experience</p><h2>From insight to <em>outcome.</em></h2><p class="intro-note">A career built across banking, business analysis, and people leadership.</p></div>
-            <div class="experience-list">
-              <article class="experience-card experience-card-featured reveal-on-scroll">
-                <div class="experience-top"><span class="experience-number">01</span><span class="experience-status">Current role</span></div>
-                <div class="experience-head"><div><p class="company">Arvest Bank <span>/ Springdale, AR</span></p><h3>Relationship Banker</h3></div><p class="dates">June 2025 — Present</p></div>
-                <p class="experience-summary">A top-performing banker translating credit analysis into lending solutions that work for both the client and the portfolio.</p>
-                <div class="experience-columns"><ul><li>Originated <strong>$300K+</strong> in new lending volume within the first quarter.</li><li>Reassessed borrower risk and structured alternative financing solutions for previously declined applications.</li></ul><ul><li>Analyze income, cash flow, debt service, and credit history to assess creditworthiness.</li><li>Guide lending relationships through evaluation, underwriting, documentation, and closing.</li></ul></div>
-                <div class="tool-row"><span>Credit analysis</span><span>Consumer lending</span><span>Loan structuring</span></div>
-              </article>
-              <article class="experience-card reveal-on-scroll">
-                <div class="experience-top"><span class="experience-number">02</span><span class="experience-status">Business analysis</span></div>
-                <div class="experience-head"><div><p class="company">Dayspring Cards, Inc. <span>/ Siloam Springs, AR</span></p><h3>Product Development &amp; Business Analyst</h3></div><p class="dates">May 2024 — May 2025</p></div>
-                <p class="experience-summary">Connected product, channel, customer, and regional data to commercial decisions across the business.</p>
-                <div class="experience-columns"><ul><li>Analyzed profitability, inventory efficiency, and SKU-level productivity using <strong>SQL, Excel, and Power BI.</strong></li></ul><ul><li>Led a cross-functional summer intern project from research to data-backed recommendations.</li></ul></div>
-                <div class="tool-row"><span>SQL</span><span>Excel</span><span>Power BI</span></div>
-              </article>
-              <article class="experience-card reveal-on-scroll">
-                <div class="experience-top"><span class="experience-number">03</span><span class="experience-status">Leadership</span></div>
-                <div class="experience-head"><div><p class="company">John Brown University <span>/ Siloam Springs, AR</span></p><h3>Admission Student Director</h3></div><p class="dates">May 2023 — May 2024</p></div>
-                <p class="experience-summary">Led the student ambassador program and the operational details behind welcoming campus visits.</p>
-                <div class="experience-columns"><ul><li>Coordinated campus visits, preview days, schedules, and event logistics.</li></ul><ul><li>Supervised and mentored ambassadors in partnership with admissions staff.</li></ul></div>
-                <div class="tool-row"><span>Leadership</span><span>Operations</span><span>Communication</span></div>
-              </article>
+          <article class="experience-entry reveal">
+            <div class="entry-index">02 <span>2025—26</span></div>
+            <div class="entry-body">
+              <div class="entry-meta"><span>Arvest Bank</span><span>Springdale, AR</span></div>
+              <h3>Relationship Banker II</h3>
+              <p class="entry-date">Jun 2025 — Jul 2026</p>
+              <ul class="entry-highlights">
+                <li>Originated <strong>$300K+</strong> in new lending volume within the first quarter as a top-performing banker since hire.</li>
+                <li>Converted previously declined applications into approved and funded deals through credit analysis and alternative financing structures aligned with bank policy.</li>
+                <li>Managed lending relationships end-to-end while analyzing income, cash flow, debt service, and credit history.</li>
+              </ul>
+              <div class="tag-row"><span>Credit analysis</span><span>Consumer lending</span><span>Risk assessment</span></div>
             </div>
-          </div>
-        </div>
-      </section>
+            <span class="entry-arrow" aria-hidden="true">↗</span>
+          </article>
 
-      <section class="section education" id="education">
-        <div class="shell section-grid">
-          <div class="section-marker"><span>04</span><p>EDUCATION</p></div>
-          <div class="education-content">
-            <div class="section-intro"><p class="eyebrow">The next chapter</p><h2>Learning with a <em>point of view.</em></h2></div>
-            <div class="education-layout">
-              <article class="degree-card degree-card-current reveal-on-scroll"><div class="degree-top"><span>2027</span><span>Current path</span></div><p class="degree-type">M.S.</p><h3>Applied Business Analytics</h3><p class="institution">Walton Graduate College of Business<br />University of Arkansas</p><div class="degree-line"></div><p class="degree-caption">Candidate · Summer 2027</p></article>
-              <div class="degree-stack">
-                <article class="degree-card degree-card-secondary reveal-on-scroll"><div class="degree-top"><span>2025</span><span>Completed</span></div><p class="degree-type">BBA</p><h3>Data Analytics &amp; Marketing</h3><p class="institution">John Brown University<br />Siloam Springs, AR</p><div class="degree-bottom"><span>3.46 GPA</span><span>2021—2025</span></div></article>
-                <div class="coursework-card reveal-on-scroll"><p class="eyebrow">Relevant coursework</p><p>Data Analytics, Business Modeling &amp; Predictive Analysis, Quantitative Business Methods, Spreadsheet Analytics, Data Visualization, Statistics, Marketing Research, Consumer Insights Analytics, Financial Analytics, and Financial &amp; Managerial Accounting.</p></div>
-              </div>
+          <article class="experience-entry reveal">
+            <div class="entry-index">03 <span>2024—25</span></div>
+            <div class="entry-body">
+              <div class="entry-meta"><span>Dayspring Cards, Inc.</span><span>Siloam Springs, AR</span></div>
+              <h3>Product Development &amp; Business Analyst</h3>
+              <p class="entry-date">May 2024 — May 2025</p>
+              <ul class="entry-highlights">
+                <li>Analyzed performance across SKUs, sales channels, customer segments, and regions using SQL, Excel, and Power BI.</li>
+                <li>Evaluated product profitability, inventory efficiency, and SKU-level productivity for leadership.</li>
+                <li>Led the Summer 2024 Intern Project from research and analysis through data-backed recommendations.</li>
+              </ul>
+              <div class="tag-row"><span>SQL</span><span>Excel</span><span>Power BI</span></div>
             </div>
-            <div class="certifications reveal-on-scroll"><p class="eyebrow">Certifications</p><div class="certification-list"><span>Google Analytics Certification <small>Google / 2024</small></span><span>Power BI Essential Training <small>LinkedIn / 2025</small></span></div></div>
-          </div>
-        </div>
-      </section>
+            <span class="entry-arrow" aria-hidden="true">↗</span>
+          </article>
 
-      <section class="section section-dark skills" id="skills">
-        <div class="shell section-grid">
-          <div class="section-marker"><span>05</span><p>SKILLS</p></div>
-          <div class="skills-content">
-            <div class="section-intro"><p class="eyebrow">The working toolkit</p><h2>Range to see the system. <em>Focus to improve it.</em></h2></div>
-            <div class="skills-grid">
-              <article class="skill-panel"><span>01</span><h3>Analytics</h3><div class="skill-tags"><b>Data Analysis</b><b>Financial Analysis</b><b>Spreadsheet Analytics</b></div></article>
-              <article class="skill-panel skill-panel-highlight"><span>02</span><h3>Technology</h3><div class="skill-tags"><b>SQL</b><b>Python</b><b>RStudio</b><b>Excel</b><b>Power BI</b><b>Microsoft Office</b></div></article>
-              <article class="skill-panel"><span>03</span><h3>Finance</h3><div class="skill-tags"><b>Consumer Lending</b><b>Loan Structuring</b><b>Credit Analysis</b><b>Underwriting Support</b></div></article>
-              <article class="skill-panel"><span>04</span><h3>Professional</h3><div class="skill-tags"><b>Communication</b><b>Problem-Solving</b><b>Decision-Making</b><b>Client Relationships</b><b>Ownership</b></div></article>
-              <article class="skill-panel skill-panel-languages"><span>05</span><h3>Languages</h3><div class="language-grid"><b>English</b><span>Professional working proficiency</span><b>Spanish</b><span>Full professional proficiency</span></div></article>
+          <article class="experience-entry reveal">
+            <div class="entry-index">04 <span>2023</span></div>
+            <div class="entry-body">
+              <div class="entry-meta"><span>Dichter &amp; Neira</span><span>Panama City, PTY</span></div>
+              <h3>Retail Business Analyst</h3>
+              <p class="entry-date">May 2023 — Aug 2023</p>
+              <ul class="entry-highlights">
+                <li>Analyzed POS and syndicated sales data for six global CPG clients across modern and traditional channels.</li>
+                <li>Built dynamic Excel dashboards using PivotTables and slicers to surface pricing effectiveness, promotional lift, and segmentation.</li>
+                <li>Led a category analysis for a beverage company, extracting retailer data into actionable insights.</li>
+              </ul>
+              <div class="tag-row"><span>Retail analytics</span><span>Excel dashboards</span><span>Consumer insights</span></div>
             </div>
-          </div>
+            <span class="entry-arrow" aria-hidden="true">↗</span>
+          </article>
         </div>
       </section>
 
-      <section class="section projects" id="projects">
-        <div class="shell section-grid">
-          <div class="section-marker"><span>06</span><p>PROJECTS</p></div>
-          <div class="projects-content">
-            <div class="section-intro"><p class="eyebrow">Portfolio in progress</p><h2>Make the work <em>visible.</em></h2><p class="intro-note">A reusable home for future analytics case studies, dashboards, and business questions.</p></div>
-            <div class="project-grid">
-              <article class="project-slot reveal-on-scroll"><div class="project-slot-top"><span>PROJECT SLOT / 01</span><span>+</span></div><div class="project-mark">01</div><h3>Analytics case study</h3><p>Use this space to frame the business question, analysis, key finding, and decision it clarified.</p><div class="project-slot-bottom"><span>SQL · Excel</span><em>Coming soon</em></div></article>
-              <article class="project-slot reveal-on-scroll"><div class="project-slot-top"><span>PROJECT SLOT / 02</span><span>+</span></div><div class="project-mark">02</div><h3>Financial dashboard</h3><p>Use this space for a Power BI or spreadsheet dashboard that makes performance easier to act on.</p><div class="project-slot-bottom"><span>Power BI · Data viz</span><em>Coming soon</em></div></article>
-              <article class="project-slot reveal-on-scroll"><div class="project-slot-top"><span>PROJECT SLOT / 03</span><span>+</span></div><div class="project-mark">03</div><h3>Portfolio insight</h3><p>Use this space for a financial or operational analysis with a clear recommendation and next step.</p><div class="project-slot-bottom"><span>Finance · Analysis</span><em>Coming soon</em></div></article>
+      <section class="section section-paper education-section" id="education" aria-labelledby="education-title">
+        <div class="container education-layout">
+          <div class="education-main reveal">
+            <p class="section-kicker">04 / Education</p>
+            <h2 id="education-title">Still learning.<br /><em>Always applying.</em></h2>
+            <article class="education-item education-featured">
+              <div class="education-year">2027</div>
+              <div><p class="education-status">CURRENT PROGRAM</p><h3>M.S. Candidate in Business Applied Analytics</h3><p>Walton Graduate College of Business<br />University of Arkansas · Fayetteville, AR</p><span class="status-pill">Candidate · Summer 2027</span></div>
+            </article>
+            <article class="education-item">
+              <div class="education-year">2025</div>
+              <div><h3>BBA in Data Analytics and Marketing</h3><p>John Brown University · Siloam Springs, AR</p><span class="status-pill">3.46 GPA · May 2025</span></div>
+            </article>
+          </div>
+          <aside class="education-side reveal reveal-delay-1">
+            <div class="cert-card">
+              <p class="card-label">Certifications</p>
+              <div class="cert-row"><span>Google Analytics Certification</span><small>Google · 2024</small></div>
+              <div class="cert-row"><span>Power BI Essential Training</span><small>LinkedIn · 2025</small></div>
             </div>
+            <div class="coursework"><strong>Relevant coursework</strong><p>Data Analytics, Business Modeling Prediction Analysis, Quantitative Business Methods, Spreadsheet Analytics, Data Visualization, Statistics, Market Research, Consumer Insights Analytics, Financial Analytics, and Financial &amp; Managerial Accounting.</p></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-dark skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="skills-orbit" aria-hidden="true"></div>
+        <div class="container section-heading section-heading-dark reveal">
+          <p class="section-kicker section-kicker-light">05 / Skills</p>
+          <h2 id="skills-title">A toolkit for seeing the system — and <em>moving it.</em></h2>
+        </div>
+        <div class="container skill-grid">
+          <article class="skill-card reveal"><span class="skill-number">01</span><h3>Analytics</h3><div class="tag-row"><span>Data analysis</span><span>Financial analysis</span><span>Spreadsheet analytics</span></div></article>
+          <article class="skill-card skill-card-wide reveal reveal-delay-1"><span class="skill-number">02</span><h3>Technology</h3><div class="tag-row"><span>Intermediate SQL</span><span>Python</span><span>RStudio</span><span>Excel</span><span>Power BI</span><span>Microsoft Office</span></div></article>
+          <article class="skill-card reveal reveal-delay-2"><span class="skill-number">03</span><h3>Finance</h3><div class="tag-row"><span>Consumer lending</span><span>Loan structuring</span><span>Underwriting support</span></div></article>
+          <article class="skill-card reveal"><span class="skill-number">04</span><h3>Professional</h3><div class="tag-row"><span>Communication</span><span>Problem-solving</span><span>Decision-making</span><span>Client relationships</span><span>Ownership</span></div></article>
+          <article class="skill-card skill-card-wide reveal reveal-delay-1"><span class="skill-number">05</span><h3>Languages</h3><div class="language-pair"><strong>English</strong><span>Communication</span><strong>Spanish</strong><span>Communication</span></div></article>
+        </div>
+      </section>
+
+      <section class="section section-cream projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container section-heading reveal">
+          <p class="section-kicker">06 / Work &amp; reports</p>
+          <h2 id="projects-title">Let the work <em>speak clearly.</em></h2>
+          <p class="heading-note">Selected reports and project artifacts from analytics, finance, and business coursework. Every report link below points to a real file included with this portfolio.</p>
+        </div>
+        <div class="container project-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-top"><span>01 / POWER BI</span><span>OPERATIONAL ANALYTICS</span></div>
+            <div class="project-visual visual-routeright" aria-hidden="true"><span>Route</span><b>Right</b><i>→</i></div>
+            <p class="project-category">Data analytics · Reporting</p>
+            <h3>RouteRight Power BI Practice Project</h3>
+            <p>Initial assessment and dashboard build plan covering pilot adoption, operational performance, client and route analysis, and risk exceptions.</p>
+            <div class="project-tags"><span>Power BI</span><span>Data modeling</span><span>KPI design</span></div>
+            <div class="project-actions"><button class="text-button" type="button" data-dialog="case-routeright">Open case study <span>↗</span></button><a class="text-button" href="assets/projects/routeright-power-bi-assessment.pdf" target="_blank" rel="noreferrer">View report <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-top"><span>02 / R + STATS</span><span>ACADEMIC</span></div>
+            <div class="project-visual visual-soccer" aria-hidden="true"><span>MLS</span><b>×</b><span>LIGA MX</span></div>
+            <p class="project-category">Data analytics · Sports</p>
+            <h3>North American Soccer Analytics</h3>
+            <p>Exploration of player roles, wages, values, age groups, and clusters across MLS and Liga MX using FIFA 22 data.</p>
+            <div class="project-tags"><span>R</span><span>ggplot2</span><span>Clustering</span></div>
+            <div class="project-actions"><button class="text-button" type="button" data-dialog="case-soccer">Open case study <span>↗</span></button><a class="text-button" href="assets/projects/north-american-soccer-analytics.pdf" target="_blank" rel="noreferrer">View report <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-top"><span>03 / CLASSIFICATION</span><span>FINANCE</span></div>
+            <div class="project-visual visual-loan" aria-hidden="true"><span>credit</span><b>→</b><span>decision</span></div>
+            <p class="project-category">Finance · Predictive modeling</p>
+            <h3>Loan Approval Classification</h3>
+            <p>A classification paper investigating which applicant and financial factors are most influential in home-loan approval outcomes.</p>
+            <div class="project-tags"><span>R</span><span>Logistic regression</span><span>EDA</span></div>
+            <div class="project-actions"><button class="text-button" type="button" data-dialog="case-loan">Open case study <span>↗</span></button><a class="text-button" href="assets/projects/loan-approval-classification.pdf" target="_blank" rel="noreferrer">View report <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top"><span>04 / REGRESSION</span><span>BUSINESS</span></div>
+            <div class="project-visual visual-ford" aria-hidden="true"><span>year</span><b>+</b><span>mileage</span></div>
+            <p class="project-category">Business analytics · Pricing</p>
+            <h3>Key Factors Influencing Ford Vehicle Price</h3>
+            <p>Prediction project studying how vehicle year, mileage, engine size, and other attributes relate to Ford vehicle pricing.</p>
+            <div class="project-tags"><span>R</span><span>Regression</span><span>Model evaluation</span></div>
+            <div class="project-actions"><button class="text-button" type="button" data-dialog="case-ford">Open case study <span>↗</span></button><a class="text-button" href="assets/projects/ford-price-prediction.pdf" target="_blank" rel="noreferrer">View report <span>↗</span></a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-dark leadership-section" id="leadership" aria-labelledby="leadership-title">
+        <div class="container leadership-layout">
+          <div class="leadership-copy reveal">
+            <p class="section-kicker section-kicker-light">07 / Beyond the spreadsheet</p>
+            <h2 id="leadership-title">Leadership shows up in the <em>standard you set.</em></h2>
+            <p>As a John Brown University student-athlete, I was part of the men’s soccer leadership team responsible for setting standards for the program. I also contributed to the team’s success as its fourth-leading scorer.</p>
+            <p>Today, I represent Walton College graduate and professional students in university-wide student government discussions and initiatives.</p>
           </div>
+          <aside class="leadership-card reveal reveal-delay-1">
+            <span class="leadership-number">04</span>
+            <p>Team’s fourth-leading scorer</p>
+            <div class="leadership-details"><span>John Brown University men’s soccer</span><span>2021 — 2025</span></div>
+          </aside>
         </div>
       </section>
 
-      <section class="section leadership" id="leadership">
-        <div class="shell leadership-layout">
-          <div class="leadership-label"><span>07</span><p>BEYOND THE SPREADSHEET</p></div>
-          <div class="leadership-copy"><p class="eyebrow">Student-athlete / leader</p><h2>Discipline is a <em>daily practice.</em></h2><p>As part of the John Brown University men’s soccer team, I helped set standards for the program and finished as the team’s fourth-leading scorer. The experience shaped how I work: prepare fully, stay accountable, support the team, and perform under pressure.</p><div class="leadership-traits"><span>Leadership</span><span>Discipline</span><span>Teamwork</span><span>Consistency</span><span>Commitment</span></div></div>
-          <div class="leadership-score"><strong>04</strong><span>fourth-leading scorer<br />on the team</span><small>Aug 2021 — Dec 2025</small></div>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
-        <div class="shell contact-layout">
-          <div class="contact-copy"><p class="section-number">08 / CONTACT</p><h2>Let’s <em>connect.</em></h2><p>For recruiters, employers, professors, and professional contacts: I would be glad to hear what you are working on and explore where an analytical, finance-minded perspective could help.</p><div class="contact-details"><a href="mailto:almanzajbu@gmail.com">almanzajbu@gmail.com <span>↗</span></a><a href="tel:+14792207168">(479) 220-7168</a><a href="https://www.linkedin.com/in/jose-almanza-a97944234/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a></div></div>
-          <form class="contact-form" id="contact-form"><p class="form-kicker">Start a conversation</p><label for="contact-name">Name</label><input id="contact-name" name="name" type="text" autocomplete="name" required /><label for="contact-email">Email</label><input id="contact-email" name="email" type="email" autocomplete="email" required /><label for="contact-message">Message</label><textarea id="contact-message" name="message" rows="4" required></textarea><button class="action action-dark" type="submit">Send message <span>↗</span></button><p class="form-note">The form opens your email app using a pre-filled message.</p></form>
+      <section class="section section-coral contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <p class="section-kicker section-kicker-dark">08 / Contact</p>
+            <h2 id="contact-title">Let’s make the next decision <em>a little clearer.</em></h2>
+            <p>For opportunities, questions, or a thoughtful conversation about analytics and business, I’d be glad to connect.</p>
+          </div>
+          <div class="contact-panel reveal reveal-delay-1">
+            <a class="contact-row" href="mailto:almanzajbu@gmail.com"><span>Email</span><strong>almanzajbu@gmail.com</strong><b>↗</b></a>
+            <a class="contact-row" href="tel:+14792207168"><span>Phone</span><strong>(479) 220-7168</strong><b>↗</b></a>
+            <a class="contact-row" href="https://www.linkedin.com/in/jose-almanza-a97944234/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>jose-almanza-a97944234</strong><b>↗</b></a>
+            <a class="contact-row" href="assets/Jose-Almanza-Resume.docx" target="_blank" rel="noreferrer"><span>Resume</span><strong>Open current resume</strong><b>↗</b></a>
+            <a class="contact-row" href="https://almanzaj3.wixsite.com/tu-sitio-web-de-pers" target="_blank" rel="noreferrer"><span>Previous portfolio</span><strong>Open original site</strong><b>↗</b></a>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#home">J<span>/</span>A</a><span>Business analytics / Finance / Data</span><span>© <span data-year>2026</span> Jose Almanza</span></div></footer>
+    <footer class="site-footer">
+      <div class="container footer-inner"><span>© <span data-year>2026</span> Jose Almanza</span><span>Business analytics × finance × people</span><a href="#home">Back to top ↑</a></div>
+    </footer>
+
+    <dialog class="case-dialog" id="case-routeright" aria-labelledby="case-routeright-title">
+      <div class="dialog-inner"><button class="dialog-close" type="button" data-dialog-close aria-label="Close case study">×</button><p class="section-kicker">01 / Operational analytics</p><h2 id="case-routeright-title">RouteRight Power BI Practice Project</h2><p class="dialog-lede">A structured first pass at turning a route-operations workbook into a decision-ready Power BI experience.</p><div class="dialog-grid"><div><h3>Problem</h3><p>The report frames how to compare a pre-pilot and pilot snapshot, understand RouteRight adoption, and surface operational, route, client, and risk questions.</p></div><div><h3>Approach</h3><p>Documented workbook facts, recommended a model and relationships, defined KPIs, and mapped a five-page dashboard plan. The report also flags incomplete August data, missing satisfaction fields, and denominator issues.</p></div><div><h3>Outcome</h3><p>A Power BI assessment and build plan that makes the next analytical steps explicit while keeping descriptive results separate from claims of causality.</p></div><div><h3>Artifact</h3><p><a class="text-link" href="assets/projects/routeright-power-bi-assessment.pdf" target="_blank" rel="noreferrer">View the assessment PDF <span>↗</span></a></p></div></div></div>
+    </dialog>
+    <dialog class="case-dialog" id="case-soccer" aria-labelledby="case-soccer-title">
+      <div class="dialog-inner"><button class="dialog-close" type="button" data-dialog-close aria-label="Close case study">×</button><p class="section-kicker">02 / Data analytics</p><h2 id="case-soccer-title">North American Soccer Analytics</h2><p class="dialog-lede">An analysis of player profiles across Major League Soccer and Liga MX using FIFA 22 data.</p><div class="dialog-grid"><div><h3>Question</h3><p>How do player roles, ratings, wages, values, ages, and league context relate across North American soccer?</p></div><div><h3>Approach</h3><p>Cleaned and prepared the dataset, reviewed missing values and outliers, transformed wage and value fields, grouped player roles and age bands, and explored correlations, distributions, and clusters.</p></div><div><h3>Outcome</h3><p>A report with descriptive statistics, visual analysis, and k-means clustering intended to reveal patterns in player profiles and compensation.</p></div><div><h3>Artifact</h3><p><a class="text-link" href="assets/projects/north-american-soccer-analytics.pdf" target="_blank" rel="noreferrer">View the project report <span>↗</span></a></p></div></div></div>
+    </dialog>
+    <dialog class="case-dialog" id="case-loan" aria-labelledby="case-loan-title">
+      <div class="dialog-inner"><button class="dialog-close" type="button" data-dialog-close aria-label="Close case study">×</button><p class="section-kicker">03 / Predictive modeling</p><h2 id="case-loan-title">Loan Approval Classification</h2><p class="dialog-lede">A finance-focused classification paper built around the question of what drives home-loan approval outcomes.</p><div class="dialog-grid"><div><h3>Problem</h3><p>Identify influential applicant and financial factors and evaluate how accurately a model can predict loan approval outcomes.</p></div><div><h3>Approach</h3><p>Prepared the loan-sanction dataset, handled missing values, encoded categorical fields, partitioned the data, and evaluated a logistic regression model.</p></div><div><h3>Outcome</h3><p>The report highlights credit history as the most influential factor in the model and documents the modeling process, fit metrics, and recommendations.</p></div><div><h3>Artifact</h3><p><a class="text-link" href="assets/projects/loan-approval-classification.pdf" target="_blank" rel="noreferrer">View the classification paper <span>↗</span></a></p></div></div></div>
+    </dialog>
+    <dialog class="case-dialog" id="case-ford" aria-labelledby="case-ford-title">
+      <div class="dialog-inner"><button class="dialog-close" type="button" data-dialog-close aria-label="Close case study">×</button><p class="section-kicker">04 / Business analytics</p><h2 id="case-ford-title">Key Factors Influencing Ford Vehicle Price</h2><p class="dialog-lede">A prediction project focused on pricing signals in a used Ford vehicle inventory.</p><div class="dialog-grid"><div><h3>Question</h3><p>Which vehicle attributes are most associated with price, and how can those signals inform pricing and marketing decisions?</p></div><div><h3>Approach</h3><p>Explored missing values, outliers, distributions, correlations, and non-linear relationships before comparing regression models with and without interactions.</p></div><div><h3>Outcome</h3><p>The report identifies year, mileage, and engine size as important price-related variables and documents model evaluation and recommendations for inventory strategy.</p></div><div><h3>Artifact</h3><p><a class="text-link" href="assets/projects/ford-price-prediction.pdf" target="_blank" rel="noreferrer">View the prediction report <span>↗</span></a></p></div></div></div>
+    </dialog>
   </body>
 </html>
